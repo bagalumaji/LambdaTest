@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests" thread-count="6">
+    <parameter name="url" value="https://www.lambdatest.com/selenium-playground/"/>
+    <test verbose="2" preserve-order="true" name="test scenario 3 with input value 1" >
+        <parameter name="browserName" value="Chrome"/>
+        <parameter name="browserVersion" value="88.0"/>
+        <parameter name="osName" value="Windows 10"/>
+        <classes>
+            <class name="tests.TestScenario3"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test scenario 3 with input value 2" >
+        <parameter name="browserName" value="MicrosoftEdge"/>
+        <parameter name="browserVersion" value="87.0"/>
+        <parameter name="osName" value="macOS Sierra"/>
+        <classes>
+            <class name="tests.TestScenario3"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test scenario 3 with input value 3" >
+        <parameter name="browserName" value="Firefox"/>
+        <parameter name="browserVersion" value="82.0"/>
+        <parameter name="osName" value="Windows 7"/>
+        <classes>
+            <class name="tests.TestScenario3"/>
+        </classes>
+    </test>
+
+    <test verbose="2" preserve-order="true" name="test scenario 3 with input value 4" >
+        <parameter name="browserName" value="Internet Explorer"/>
+        <parameter name="browserVersion" value="11.0"/>
+        <parameter name="osName" value="Windows 10"/>
+        <classes>
+            <class name="tests.TestScenario3"/>
+        </classes>
+    </test>
+    <parameter name="browserName" value="Chrome"/>
+    <parameter name="browserVersion" value="88.0"/>
+    <parameter name="osName" value="Windows 10"/>
+    <test verbose="2" preserve-order="true" name="test scenario 1" >
+        <classes>
+            <class name="tests.TestScenario1"/>
+        </classes>
+    </test>
+    <test verbose="2" preserve-order="true" name="test scenario 2" >
+        <classes>
+            <class name="tests.TestScenario2"/>
+        </classes>
+    </test>
+</suite>
